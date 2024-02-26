@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
 function atirar() {
     var container = document.getElementById('container');
     var minhaNave = document.getElementById('minha-nave');

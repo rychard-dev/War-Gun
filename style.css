@@ -42,8 +42,6 @@ body {
     animation: moveNave 6s linear infinite;
 }
 
-
-
 .missil {
     position: absolute;
     width: 20px; /* Ajuste conforme necessário */
