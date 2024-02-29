@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Definindo a imagem de fundo */
+    background-image: url('images/espaço.jpg'); /* Substitua 'caminho/para/sua/imagem.jpg' pelo caminho da sua imagem */
+    background-size: cover; /* Garante que a imagem cubra toda a área do corpo */
+    background-position: center; /* Centraliza a imagem na página */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    margin: 0; /* Removendo margens padrão do corpo */
+    padding: 0; /* Removendo preenchimento padrão do corpo */
+    /* Pode adicionar outras propriedades conforme necessário */
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 200px; /* Adiciona uma altura mínima ao contêiner */
+    height: 100vh; /* Define a altura do contêiner para cobrir toda a altura da viewport */
+    border: 1px solid black; /* Adicione uma borda para visualização */
+}
+  
+.element {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(0%);
+    width: 100px;
+    height: 100px;
+}
+
+.element2 {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(0%);
+    width: 100px;
+    height: 100px;
+    animation: moveNave 6s linear infinite;
+}
+
+.missil {
+    position: absolute;
+    width: 20px; /* Ajuste conforme necessário */
+    height: 20px; /* Ajuste conforme necessário */
+    background-image: url('images/meu-missil.png');
+    animation: moverMissil 3s linear; /* Ajuste a duração e o tipo de animação conforme necessário */
+    background-repeat: no-repeat;
+}
+
+@keyframes moverMissil {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10000%);
+    }
+}
+
+@keyframes moveNave {
+    0%{left: 200px;}
+    /*25%{left: 100px;}*/
+    50%{left: 1200px;}
+    /*75%{left: 100px;}*/
+    100%{left: 200px;}
+}
